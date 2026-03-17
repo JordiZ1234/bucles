@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #calculadora{
+            width: 300px;
+            height: 500px;
+            border: black 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        #numeros{
+            border: rgb(41, 40, 40) 1px solid;
+            width: 350px;
+            height: 350px;
+            display: flex;
+            border-radius: 5px;
+            background-color: grey;
+            flex-wrap: wrap;
+            gap: 35px;
+            justify-content: center;
+            align-items: center;
+        }
+        .num{
+            background-color: rgb(216, 216, 216);
+            width: 50px;
+            height: 50px;
+            border: 1px black solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculadora">
+        <div id="numeros">
+
+        </div>
+    </div>
+    <script>
+       let divsNumeros =""
+        
+       for(let cont=1;cont<=10;cont++){
+        divsNumeros = divsNumeros + `<div class="num" id="${cont}">${cont}</div>`
+       }
+
+
+
+       document.querySelector("#numeros").innerHTML = divsNumeros
+       
+        
+       
+       
+       // let resultado = 0
+        // for(let m=1 ;m<11 ; m++){
+        //     resultado = 3 * m
+        //     console.log("3 x " +m+"="+resultado)
+        // }
+    </script>
+</body>
+</html>
