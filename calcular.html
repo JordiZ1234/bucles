@@ -6,22 +6,71 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="ejercicios.html">asd</a>
     <input id="calcular" type="number">
     <button id="btn">calcular</button>
     <div id="resu">
+<<<<<<< HEAD
+=======
+    
+>>>>>>> d50637dea7fdde75dfdb24088c87f301a002de02
     </div>
     <script>
         let calcular = document.querySelector("#calcular")
         let btn = document.querySelector("#btn")
         let resu = document.querySelector("#resu")
         let resultado = 0
+        btn.addEventListener("click", calculo)
+        function calculo(){
+            for(let m=1; m<10; m++){
+                resultado = calcular.value * m
+                resu.innerHTML += (calcular.value + "x " + m + resultado +"<br>")
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- let resultado = 0
         function calculo(){
             for(let m=1 ;m<=10 ; m++){
             resultado = calcular.value * m
             resu.innerHTML+=(calcular.value + "x " +m+"="+resultado +"<br>")
         }
         }
-        btn.addEventListener("click", calculo)
-    </script>
+        btn.addEventListener("click", calculo) -->
 </body>
 </html>
