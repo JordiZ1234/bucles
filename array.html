@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeros = ["1", "2", "3", "4", "5"];
+        numeros [2] = 4;
+        console.log(numeros [0])
+        console.log(numeros [4])
+        console.log(numeros [2])
+    </script>
+    <script>
+        let palabras = ["sniffer", "putty", "router", "cisco"];
+        for (let i = 1; i < palabras.length; i++){
+            console.log("paraula i: " + palabras[i])
+        }
+    </script>
+    <script>
+        let subir = [];
+        subir.push ("Javascript")
+        subir.push ("CSS")
+        subir.push ("HTML")
+        subir.pop ("CSS")
+        console.log(subir)
+    </script>
+    <script>
+        let dosde = [
+            ["1", "2", "3"],
+            ["4", "5", "6"],
+            ["7", "8", "9"],
+        ]
+        dosde [2] [2] = 200;
+        console.log(dosde[1][2]);
+        console.log(dosde)
+    </script>
+    <script>
+        let ultimo = [
+            ["1", "2", "3"],
+            ["4", "5", "6"],
+            ["7", "8", "9"],
+        ]
+
+        for (let fila = 0; fila < ultimo.length; fila = fila + 1){
+            for (let columna = 0; columna < ultimo[fila].length; columna = columna + 1){
+                console.log ("Valor [" + fila + "][" + columna + "] = "+ ultimo[fila][columna]);
+            }
+        }
+    </script>
+</body>
+</html>
